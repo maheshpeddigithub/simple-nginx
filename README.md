@@ -27,3 +27,5 @@ kubectl expose deployment simple-nginx --type LoadBalancer --port 80 --target-po
 kubectl get pods
 kubectl get service simple-nginx
 kubectl get services
+
+kubectl apply -f k8s-simple-nginx.yml
