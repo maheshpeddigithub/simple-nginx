@@ -19,6 +19,6 @@ kubectl get pods <br>
 kubectl get service simple-nginx <br>
 kubectl get services <br>
 
-K8S-Manifast: <br>
+K8S-Manifest: <br>
 ------------- <br>
 kubectl apply -f k8s-simple-nginx.yml <br>
