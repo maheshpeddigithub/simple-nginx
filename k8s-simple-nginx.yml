@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-simple-nginx
@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: k8s-simple-nginx
-  replicas: 1
+  replicas: 3
   template:
     metadata:
       labels:
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: k8s-simple-nginx
-          image: eu.gcr.io/ssil1-258911/simple-nginx:tag1
+          image: cloudmahesh/simple-nginx:tag1
           ports:
             - containerPort: 80
           env:
